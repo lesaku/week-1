@@ -10,13 +10,19 @@ namespace Lab1_2
     {
         static void Main(string[] args)
         {
-            int[] input = { 4, 5, 2, 8, 9, 1, 2, 4, 3, 1 };
-            process(input);
-            output(input);
-            Console.ReadKey(); 
+            input(); 
         }
-        static void process(int[] input)
+        public static void input()
         {
+            string x;
+            Console.WriteLine("Input number : ");
+            x = Console.ReadLine();
+            process(x);
+        }
+        static void process(string x)
+        {
+            int[] input;
+            input = x.Split(' ').Select(n => Convert.ToInt32(n)).ToArray();
             bool flag = true;
             while (flag)
             {
@@ -32,6 +38,7 @@ namespace Lab1_2
                     }
                 }
             }
+            output(input);
         }
         static void output(int[] input)
         {
@@ -40,6 +47,7 @@ namespace Lab1_2
                 Console.Write(input[i]);
                 Console.Write(" ");
             }
+            Console.ReadKey();
         }
     }
 }
