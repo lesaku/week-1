@@ -16,7 +16,7 @@ namespace Lab1_2
             int[] input = { 4, 5, 2, 8, 9, 1, 2, 4, 3, 1 };
             process(input);
             output(input);
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
         static void process(int[] input)
         {
