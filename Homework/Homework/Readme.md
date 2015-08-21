@@ -7,7 +7,7 @@
 * Why we need "if-else" in function process?
 
 Answer:
-
+Because function process is recusion. We use "if-else" to decide when we want to stop recursion or continue.
 
 # Resources
 * https://en.wikipedia.org/wiki/Recursion_(computer_science)
